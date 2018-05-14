@@ -1,0 +1,6 @@
+Bigrams will span practically every line of input except for newlines and the beginning/end
+of a document. Knowing this, we can anticipate a Bigram at the beginning and end of each 
+line. To compensate we can assign a job to specifically look for these occasions which do 
+not include new lines or the BOF/EOF. The output of this file can be put into a similar directory
+as the rest of our program. The final reducer stage of the input could then take the
+directory as input and bring everything together.
